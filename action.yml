@@ -4,6 +4,7 @@ author: 'simple-elf'
 branding:
   icon: 'layout'
   color: 'green'
+
 inputs:
   allure_results:
     description: 'Allure test result data dir'
@@ -49,6 +50,15 @@ inputs:
     description: 'Use a custom URL instead of *.github.io'
     required: false
     default: ''
+  image_version:
+    description: 'Image version'
+    required: false
+    default: ''
+  dut:
+    description: 'Device Under Test'
+    required: false
+    default: ''
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
